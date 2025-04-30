@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Foto</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Galeri Foto JBBB</h1>
+
+  <div class="gallery">
+    <img src="foto1.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+    <img src="foto3.jpg" alt="Foto 3">
+    <img src="foto4.jpg" alt="Foto 4">
+    <img src="foto5.jpg" alt="Foto 5">
+    <img src="foto6.jpg" alt="Foto 6">
+    <img src="foto7.jpg" alt="Foto 7">
+    <img src="foto8.jpg" alt="Foto 8">
+    <img src="foto9.jpg" alt="Foto 9">
+    <img src="foto10.jpg" alt="Foto 10">
+    <img src="foto11.jpg" alt="Foto 11">
+    <img src="foto12.jpg" alt="Foto 12">
+  </div>
+  <a href="index.html" target="_blank">
+    <button class="btn">Kembali</button>
+  </a>
+</body>
+</html>
